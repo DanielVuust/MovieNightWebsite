@@ -12,29 +12,43 @@
 <body>
     <form id="form1" runat="server" class="container-fluid">
 
-        <header class="row">
+        <header class="row p-0">
             <a class="col-12 h1 p-0 m-0" href="default.aspx">Movie Night Database</a>
         </header>
         <div class="row p-0">
             <a href="AddMovie.aspx" class="col-12 h4" >Add New Movie</a>
         </div>
 
-        <h1>Add a new movie</h1>
-        <h5>Movie Title:</h5>
-        <input id="NewMovieTitle" type="text" class="align-middle" name="NewMovieTitle"/><br/>
-        <h5>Movie Release Year:</h5>
-        <input id="NewMovieReleaseYear" type="number" class="align-middle" name="NewMovieReleaseYear"/>
-        
-        <h5 class="col-12">Genre</h5>
+        <div>
+            <h1>Add a new movie</h1>
 
-        <h6>Action:</h6>
-        <input id="NewMovieGenreAction" type="checkbox" name="Action" value="Action" />
-        <h6>Drama:</h6>
-        <input id="NewMovieGenreDrama" type="checkbox" name="Drama" value="Drama" />
-        <h6>Horror:</h6>
-        <input id="NewMovieGenreHorror" type="checkbox" name="Horror" value="Horror"/>
-        <br/>
-        <asp:Button Text="Submit" runat="server" OnClick="SubmitNewMovie"/>
+            <h4>Movie Title:</h4>
+            <input id="NewMovieTitle" type="text" class="col-6" name="NewMovieTitle" />
+
+            <h4>Movie Release Year:</h4>
+            <input id="NewMovieReleaseYear" type="number" class="col-6" name="NewMovieReleaseYear"/>
+        
+            <h4 class="col-12">Genre</h4>
+
+            <div class="row w-50 mx-auto">
+                <div class="col-md-4">
+                    <h6>Action:</h6>
+                    <input id="NewMovieGenreAction" type="checkbox" name="Action" value="Action" />
+                </div>
+                <div class="col-md-4">
+                    <h6>Drama:</h6>
+                    <input id="NewMovieGenreDrama" type="checkbox" name="Drama" value="Drama" />
+                </div>
+                <div class="col-md-4">
+                    <h6>Horror:</h6>
+                    <input id="NewMovieGenreHorror" type="checkbox" name="Horror" value="Horror"/>
+                </div>
+
+            </div>
+            <asp:Button Text="Submit" runat="server" OnClick="SubmitNewMovie"/>
+
+        </div>
+    
     </form>
 </body>
 </html>

@@ -13,16 +13,14 @@
     <form id="mainForm" runat="server" class="container-fluid">
         <header class="row">
             <a class="col-12 h1 p-0 m-0" href="default.aspx">Movie Night Database</a>
-        </header>
-        <div class="row p-0">
             <a href="AddMovie.aspx" class="col-12 h4" >Add New Movie</a>
-        </div>
-        <asp:Table ID="Table1" runat="server" CssClass="row table-bordered table-striped">
+        </header>
+        <asp:Table ID="MovieTable" runat="server" CssClass="row table-bordered table-striped">
             <asp:TableHeaderRow CssClass="row">
-                <asp:TableHeaderCell CssClass="col-3">id</asp:TableHeaderCell>
-                <asp:TableHeaderCell CssClass="col-3">title</asp:TableHeaderCell>
-                <asp:TableHeaderCell CssClass="col-3">release year</asp:TableHeaderCell>
-                <asp:TableHeaderCell CssClass="col-3">genre</asp:TableHeaderCell>
+                <asp:TableHeaderCell CssClass="col-3">Id</asp:TableHeaderCell>
+                <asp:TableHeaderCell CssClass="col-3">Title</asp:TableHeaderCell>
+                <asp:TableHeaderCell CssClass="col-3">Release Year</asp:TableHeaderCell>
+                <asp:TableHeaderCell CssClass="col-3">Genre</asp:TableHeaderCell>
             </asp:TableHeaderRow>
         </asp:Table>
     </form>
