@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddMovie.aspx" />
+    <Content Include="AllMovieTable.aspx" />
     <Content Include="Css\style.css" />
     <Content Include="default.aspx" />
     <Content Include="Scripts\esm\popper-utils.js" />
@@ -177,6 +178,13 @@
     <Compile Include="AddMovie.aspx.designer.cs">
       <DependentUpon>AddMovie.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AllMovieTable.aspx.cs">
+      <DependentUpon>AllMovieTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllMovieTable.aspx.designer.cs">
+      <DependentUpon>AllMovieTable.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Actor.cs" />
     <Compile Include="Classes\DalManager.cs" />
     <Compile Include="Classes\Genre.cs" />
@@ -207,6 +215,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pics\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

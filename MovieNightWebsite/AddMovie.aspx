@@ -10,23 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <form id="form1" runat="server" class="container-fluid">
-
-        <header class="row p-0">
+    <form id="form1" runat="server" class="container-fluid background backgroundTranparent">
+        <header class="row">
             <a class="col-12 h1 p-0 m-0" href="default.aspx">Movie Night Database</a>
+            <a href="AddMovie.aspx" class="col-md-6 h4" >Add New Movie</a>
+            <a href="AllMovieTable.aspx" class="col-md-6 h4" >Veiw All Movies</a>
         </header>
-        <div class="row p-0">
-            <a href="AddMovie.aspx" class="col-12 h4" >Add New Movie</a>
-        </div>
+        
 
         <div>
             <h1>Add a new movie</h1>
 
             <h4>Movie Title:</h4>
-            <input id="NewMovieTitle" type="text" class="col-6" name="NewMovieTitle" />
+            <input id="NewMovieTitle" type="text" class="col-6" name="NewMovieTitle" autocomplete="off"/>
 
             <h4>Movie Release Year:</h4>
-            <input id="NewMovieReleaseYear" type="number" class="col-6" name="NewMovieReleaseYear"/>
+            <input id="NewMovieReleaseYear" type="number" class="col-6" name="NewMovieReleaseYear" autocomplete="off"/>
         
             <h4 class="col-12">Genre</h4>
 

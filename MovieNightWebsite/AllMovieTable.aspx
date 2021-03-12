@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="MovieNightWebsite._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AllMovieTable.aspx.cs" Inherits="MovieNightWebsite.AllMovieTable" %>
 
 <!DOCTYPE html>
 
@@ -16,9 +16,16 @@
             <a href="AddMovie.aspx" class="col-md-6 h4" >Add New Movie</a>
             <a href="AllMovieTable.aspx" class="col-md-6 h4" >Veiw All Movies</a>
         </header>
-        <div>
-            <h1 class="display-1 m-5">Movie Night</h1>
-        </div>
+        
+
+        <asp:Table ID="MovieTable" runat="server" CssClass="row">
+            <asp:TableHeaderRow CssClass="row">
+                <asp:TableHeaderCell CssClass="col-3">Id</asp:TableHeaderCell>
+                <asp:TableHeaderCell CssClass="col-3">Title</asp:TableHeaderCell>
+                <asp:TableHeaderCell CssClass="col-3">Release Year</asp:TableHeaderCell>
+                <asp:TableHeaderCell CssClass="col-3">Genre</asp:TableHeaderCell>
+            </asp:TableHeaderRow>
+        </asp:Table>
     </form>
     
 </body>
