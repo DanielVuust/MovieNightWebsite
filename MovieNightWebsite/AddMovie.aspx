@@ -14,7 +14,7 @@
         <header class="row">
             <a class="col-12 h1 p-0 m-0" href="default.aspx">Movie Night Database</a>
             <a href="AddMovie.aspx" class="col-md-6 h4" >Add New Movie</a>
-            <a href="AllMovieTable.aspx" class="col-md-6 h4" >Veiw All Movies</a>
+            <a href="AllMovieTable.aspx" class="col-md-6 h4" >View All Movies</a>
         </header>
         
 

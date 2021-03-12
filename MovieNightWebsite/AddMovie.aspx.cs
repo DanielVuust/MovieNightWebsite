@@ -29,9 +29,9 @@ namespace MovieNightWebsite
             {
                 strList.Add("Horror");
             }
-            string kage = Request.Form["NewMovieTitle"];
-            int kage1 = Convert.ToInt32(Request.Form["NewMovieReleaseYear"]);
-            Movie newMovie = new Movie(strList, kage, kage1);
+            string movieTitle = Request.Form["NewMovieTitle"];
+            int movieReleaseYear = Convert.ToInt32(Request.Form["NewMovieReleaseYear"]);
+            Movie newMovie = new Movie(strList, movieTitle, movieReleaseYear);
             MovieManager.AddMovie(newMovie);
             
         }

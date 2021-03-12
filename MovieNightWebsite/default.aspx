@@ -12,12 +12,12 @@
 <body>
     <form id="mainForm" runat="server" class="container-fluid background">
         <header class="row">
-            <a class="col-12 h1 p-0 m-0" href="default.aspx">Movie Night Database</a>
+            <a class="col-12 h1" href="default.aspx">Movie Night Database</a>
             <a href="AddMovie.aspx" class="col-md-6 h4" >Add New Movie</a>
-            <a href="AllMovieTable.aspx" class="col-md-6 h4" >Veiw All Movies</a>
+            <a href="AllMovieTable.aspx" class="col-md-6 h4" >View All Movies</a>
         </header>
-        <div>
-            <h1 class="display-1 m-5">Movie Night</h1>
+        <div class="row">
+            <h1 class="col-12 display-1">Movie Night</h1>
         </div>
     </form>
     
